@@ -26,7 +26,7 @@ def ejecutarSimulacion(lavadero, prelavado, secado_mano, encerado):
         # ERROR CORREGIDO : Cambiado de hacerLavado a _hacer_lavado para coincidir con lavadero.py.
         
         
-        lavadero.hacerLavado(prelavado, secado_mano, encerado)
+        lavadero._hacer_lavado(prelavado, secado_mano, encerado)
         print("\nCoche entra. Estado inicial:")
         lavadero.imprimir_estado()
 

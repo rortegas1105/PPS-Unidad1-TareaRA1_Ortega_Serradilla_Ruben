@@ -222,7 +222,7 @@ class Lavadero:
     # Esta función es útil para pruebas unitarias, no es parte del lavadero real
     # nos crea un array con las fases visitadas en un ciclo completo
 
-def ejecutar_y_obtener_fases(self, prelavado, secado, encerado):
+    def ejecutar_y_obtener_fases(self, prelavado, secado, encerado):
         """Ejecuta un ciclo completo y devuelve la lista de fases visitadas.
         :param prelavado: Booleano para prelavado manual
         :param secado: Booleano para secado manual
