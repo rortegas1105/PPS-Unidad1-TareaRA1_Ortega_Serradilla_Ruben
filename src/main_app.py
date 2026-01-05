@@ -23,6 +23,9 @@ def ejecutarSimulacion(lavadero, prelavado, secado_mano, encerado):
     # 1. Iniciar el lavado
     try:
         # Esto establece las opciones y pasa a Fase 0 (Inactivo, pero Ocupado=True)
+        # ERROR CORREGIDO : Cambiado de hacerLavado a _hacer_lavado para coincidir con lavadero.py.
+        
+        
         lavadero.hacerLavado(prelavado, secado_mano, encerado)
         print("\nCoche entra. Estado inicial:")
         lavadero.imprimir_estado()
@@ -78,6 +81,8 @@ if __name__ == "__main__":
 
     # EJEMPLO 4: Lavado con prelavado a mano (Requisito 4 y 10)
     # Precio esperado: 5.00 + 1.50 = 6.50 €
+
+    # ERROR CORRECCIÓN : Faltaba el argumento 'encerado' en la llamada.
     print("\n=======================================================")
     print("EJEMPLO 4: Prelavado (S), Secado a mano (N), Encerado (N)")
-    ejecutarSimulacion(lavadero_global, prelavado=True, secado_mano=False)
+    ejecutarSimulacion(lavadero_global, prelavado=True, secado_mano=False,encerado=False)
